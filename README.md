@@ -2,17 +2,17 @@
 
 This libary will contain functions to generate random strings, sentences, and paragraphs using Python. It is inspired by the recent rumours that Elon Musk and Grimes have named their newborn "X Æ A-12". I was talking to a friend and we joked that they must have used a random string generator to get that name. I then realized Python does come with a Random Integer module, but not a Random String module. I'm sure there are libraries out their, but I decided to make my own.
 
-### Notes
+### __Notes__
 
 ##### Importing
-*import xaea12 as xae*
+import xaea12 as xae
 
-#### Getting single values
+##### Getting single values
 If you want a single character simply put a minLength & maxLength of 1 and a single character will be generated. By setting 3 of the character types to False and keeping one as True, you can specifically generate a lowercase letter, symbol, etc.
 
 The same can be done for a one-word sentece. Set minWords & maxWords to 1 and a single word, with a capitalized first character and period will be generated.
 
-### Functions
+### __Functions__
 
 ##### xae.getString(*int minLength, int maxLength, bool lowercase, bool caps, bool symbols, bool numbers*)
 
@@ -27,7 +27,7 @@ Returns a random sentence with a length between minWords and maxWords. All other
 
 
 
-### Default Values
+### __Default Values__
 -lowercase : True
 
 -uppercase: False
@@ -43,7 +43,9 @@ Returns a random sentence with a length between minWords and maxWords. All other
 -minWords: 3
 
 -maxWords: 10
-### Definitions
+
+
+### __Definitions__
 The four character types specified above are lowercase, uppercase, symbols, and numbers.
 
 Lowercase includes any of the following characters: abcdefghijklmnopqrstuvwxyz
