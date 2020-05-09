@@ -19,13 +19,17 @@ The same can be done for a one-word sentece. Set minWords & maxWords to 1 and a 
 Returns a random string of specified characters. By setting lowercase, caps, symbols, and numbers to True or False,
 you can control which characters your string will be comprised of. 
 
-##### xae.getSentence(*int minWords, int maxWords, int minWordLength, int maxWordLength, bool lowercase, bool caps, bool symbols, bool numbers*):
+##### xae.getSentence(*int minWords, int maxWords, int minWordLength, int maxWordLength, bool lowercase, bool caps, bool symbols, bool numbers*)
 
 Returns a random sentence with a length between minWords and maxWords. All other parameters are used to define the characters used for the strings in the sentence. Sentences will be returned with a capital letter and period.
 
-##### xae.getParagraph(*int minSentences, int maxSentences, int minWords, int maxWords, int minWordLength, int maxWordLength, bool lowercase, bool caps, bool symbols, bool numbers*):
+##### xae.getParagraph(*int minSentences, int maxSentences, int minWords, int maxWords, int minWordLength, int maxWordLength, bool lowercase, bool caps, bool symbols, bool numbers*)
 
 Returns a random paragraph with a number of sentences between minSentences and maxSentences. All other parameters are used in the calling of the getSentence and getString functions. Paragraphs are returned with a line break at the end, so you can call this function multiple times to create a full text with multiple paragraphs.
+
+##### xae.getMuskBabyName()
+
+Returns a Elon Musk and Grimes inspired baby name, made up of a Capital letter, random ligature symbol, and a plane name.
 
 
 ### Default Values

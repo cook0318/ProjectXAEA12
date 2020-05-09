@@ -92,6 +92,21 @@ def getParagraph(minSentences=3, maxSentences=10, minWords=3, maxWords=10, minWo
 
     # Add a line break at the end.
     paragraph = paragraph + "\n"
-    
+
     return paragraph
 
+
+def getMuskBabyName():
+    firstLetter = getString(1,1,False,True,False,False)
+
+    specialChars = ['Æ', 'Œ', 'ᚠ', 'ᛘ','г', 'л', 'ъ', 'б', 'Ↄ', 'ꝯ̄','ꝋ','q̱','q̱̃','gͣ', 'Ꜿ', 'ꜿ','Ꝭ', 'ꝭ', 'Ꝅ', 'ꝅ', 'Ꝉ', 'ꝳ','ꝴ','Ꝓ',
+    'Ꝙ', 'Ꝝ', 'ꝝ', 'Ꝟ',]
+
+    planes = ["SR-71", "A-12", "B-52", "F-16", "H-4", "A320", "B-747", "VC-25", "10-E", "X-1", "B-25", "SR22", "AC-130", "DC-3", "C-172",
+    "B-29", "G6", "G500", "F-35", "MQ-1", "J-3", "MiG-21"]
+
+    name = firstLetter + " " + specialChars[random.randint(0,len(specialChars)-1)] + " " + planes[random.randint(0,len(planes)-1)]
+
+    return name
+
+print(getMuskBabyName())
