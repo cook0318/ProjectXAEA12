@@ -108,5 +108,3 @@ def getMuskBabyName():
     name = firstLetter + " " + specialChars[random.randint(0,len(specialChars)-1)] + " " + planes[random.randint(0,len(planes)-1)]
 
     return name
-
-print(getMuskBabyName())
