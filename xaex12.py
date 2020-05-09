@@ -1,6 +1,6 @@
 import random
 
-def getString(minWordLength, maxWordLength, lowercase=True, uppercase=False, symbols=False, numbers=False):
+def getString(minWordLength=3, maxWordLength=10, lowercase=True, uppercase=False, symbols=False, numbers=False):
     # Define characters.
     lowercaseString = "abcdefghijklmnopqrstuvwxyz"
     uppercaseString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -36,7 +36,7 @@ def getString(minWordLength, maxWordLength, lowercase=True, uppercase=False, sym
 
 
 
-def getSentence(minWords, maxWords, minWordLength, maxWordLength, lowercase=True, uppercase=False, symbols=False, numbers=False):
+def getSentence(minWords=3, maxWords=10, minWordLength=3, maxWordLength=10, lowercase=True, uppercase=False, symbols=False, numbers=False):
     # Get a random number of words to make between users parameters, using random.randint.
     numWords = random.randint(minWords, maxWords)
     listOfStrings = []
@@ -71,3 +71,5 @@ def getSentence(minWords, maxWords, minWordLength, maxWordLength, lowercase=True
     sentence = sentence + "."
     
     return sentence
+
+print(getSentence(3))
