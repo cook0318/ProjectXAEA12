@@ -72,4 +72,26 @@ def getSentence(minWords=3, maxWords=10, minWordLength=3, maxWordLength=10, lowe
     
     return sentence
 
-print(getSentence(3))
+
+
+def getParagraph(minSentences=3, maxSentences=10, minWords=3, maxWords=10, minWordLength=3, maxWordLength=10, lowercase=True, uppercase=False, symbols=False, numbers=False):
+    # Randomly chose the number of sentences between the users parameters using random.randint.
+    numSentences = random.randint(minSentences,maxSentences)
+
+    # Call getSentence for however many sentences we need to create.
+    s = 0
+    paragraph = []
+    while s < numSentences:
+        sentence = getSentence(minWords=3, maxWords=10, minWordLength=3, maxWordLength=10, lowercase=True, uppercase=False, symbols=False, numbers=False)
+        sentence = sentence + " "
+        paragraph.append(sentence)
+        s+=1
+
+    # Join the list of sentences into one string.
+    paragraph = ''.join(paragraph)
+
+    # Add a line break at the end.
+    paragraph = paragraph + "\n"
+    
+    return paragraph
+
