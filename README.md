@@ -8,23 +8,27 @@ This libary will contain functions to generate random strings, sentences, and pa
 ### Functions
 
 ##### getString
-xae.getString(int minLength, int maxLength, bool lowercase, bool caps, bool symbols, bool numbers)
+xae.getString(*int minLength, int maxLength, bool lowercase, bool caps, bool symbols, bool numbers*)
 
 Returns a random string of specified characters. By setting lowercase, caps, symbols, and numbers to True or False,
 you can control which characters your string will be comprised of. Default values are:
+
 -lowercase : True
+
 -uppercase: False
+
 -symbols: False
+
 -numbers: False
-
-
-
-
 
 
 ### Definitions
 The four character types specified above are lowercase, uppercase, symbols, and numbers.
+
 Lowercase includes any of the following characters: abcdefghijklmnopqrstuvwxyz
+
 Uppercase includes any of the following characters: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
 Numbers includes any of the following characters: 1234567890
+
 Symbols includes any of the following characters: !@#$%^&*()~`,./<>?;:'"[]{}-=_+
