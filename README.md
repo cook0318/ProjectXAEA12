@@ -7,8 +7,7 @@ This libary will contain functions to generate random strings, sentences, and pa
 
 ### Functions
 
-##### getString
-xae.getString(*int minLength, int maxLength, bool lowercase, bool caps, bool symbols, bool numbers*)
+##### xae.getString(*int minLength, int maxLength, bool lowercase, bool caps, bool symbols, bool numbers*)
 
 Returns a random string of specified characters. By setting lowercase, caps, symbols, and numbers to True or False,
 you can control which characters your string will be comprised of. Default values are:
