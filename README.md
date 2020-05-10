@@ -70,3 +70,5 @@ Symbols includes any of the following characters: !@#$%^&*()~`,./<>?;:'"[]{}-=_+
 -Validation for if user enters a min number larger than a max value
 
 -What happens if a user enters all bool parameters as false?
+
+-What happens when lowercase is set to false?
