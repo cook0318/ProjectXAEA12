@@ -82,7 +82,7 @@ def getParagraph(minSentences=3, maxSentences=10, minWords=3, maxWords=10, minWo
     s = 0
     paragraph = []
     while s < numSentences:
-        sentence = getSentence(minWords=3, maxWords=10, minWordLength=3, maxWordLength=10, lowercase=True, uppercase=False, symbols=False, numbers=False)
+        sentence = getSentence(minWords=3, maxWords=10, minWordLength=3, maxWordLength=10, lowercase=lowercase, uppercase=uppercase, symbols=symbols, numbers=numbers)
         sentence = sentence + " "
         paragraph.append(sentence)
         s+=1
@@ -108,3 +108,5 @@ def getMuskBabyName():
     name = firstLetter + " " + specialChars[random.randint(0,len(specialChars)-1)] + " " + planes[random.randint(0,len(planes)-1)]
 
     return name
+
+print(getParagraph(5,10,5,10,5,10,True,True,True,True))
