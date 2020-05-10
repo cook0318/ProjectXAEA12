@@ -63,3 +63,10 @@ Uppercase includes any of the following characters: ABCDEFGHIJKLMNOPQRSTUVWXYZ
 Numbers includes any of the following characters: 1234567890
 
 Symbols includes any of the following characters: !@#$%^&*()~`,./<>?;:'"[]{}-=_+
+
+
+### To Do:
+
+-Validation for if user enters a min number larger than a max value
+
+-What happens if a user enters all bool parameters as false?
